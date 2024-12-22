@@ -101,9 +101,5 @@ for row in rows:
             national_line = match.group(1)
             national_lines.append((year, national_line))
 
-# 打印爬取的历年国家线
-for year, line in national_lines:
-    print(f"{year} 年考研国家线: {line}")
-
 # 关闭浏览器
 driver.quit()
