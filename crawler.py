@@ -21,31 +21,16 @@ json_data = {
 }
 
 class Score:
-    data: dict = {
-        'scoreYear': int,
-        'scoreAll': int,
-        'scoreEnglish': int,
-        'scorePolitics': int,
-        'scoreMath': int,
-        'scoreMajor': int,
-        'majorId': int,
-        'areaType': int
-    }
-
-    def __init__(self, s: [str]):
-        self.data['scoreYear'] = s[0]
-        majorId = ms.get(s[1])
-        if majorId is not None:
-            self.data['majorId'] = majorId
-        self.data['scoreAll'] = s[2]
-        self.data['scoreEnglish'] = s[3]
-        self.data['scorePolitics'] = s[4]
-        self.data['scoreMath'] = s[5]
-        self.data['scoreMajor'] = s[6]
-        if s[7] == 'A区\n':
-            self.data['areaType'] = 1
-        elif s[7] == 'B区\n':
-            self.data['areaType'] = 2
+    def __init__(self, score: [str]):
+        self.year = score[0]
+        self.id = score[1]
+        self.majorName = score[2]
+        self.schoolName = score[4]
+        self.all = score[6]
+        self.english = score[7]
+        self.politics = score[8]
+        self.math = score[9]
+        self.majorScore = score[10]
 
 
 def initData() -> Score or None:

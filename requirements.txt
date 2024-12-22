@@ -3,3 +3,5 @@ selenium
 beautifulsoup4
 scikit-learn
 jupyter
+pandas
+matplotlib
