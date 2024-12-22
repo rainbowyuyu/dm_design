@@ -1,7 +1,8 @@
+numpy
+pandas
+matplotlib
+jupyter
+scikit-learn
 requests
 selenium
 beautifulsoup4
-scikit-learn
-jupyter
-pandas
-matplotlib
