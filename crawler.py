@@ -20,6 +20,7 @@ json_data = {
     "special_name": ""
 }
 
+
 class Score:
     def __init__(self, score: [str]):
         self.year = score[0]
